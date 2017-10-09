@@ -27,13 +27,13 @@ public class Points {
 		// Output
 		System.out.print("The closest two points are " + "(" + points[p1][0] + "," 
 				 + points[p1][1] + ") and (" + points[p2][0] + "," 
-				+ points[p2][1] + ")");
+				+ points[p2][1] + ")"); // JA: You forgot to include the z coordinate
 		}
 		// Distance formula
 	public static double distance(
 			double x1, double y1, double z1, double x2, double y2, double z2) {
 		return Math.sqrt(Math.pow(x2 - x1,  2) +
-				Math.pow(y2 - y1,  2) + Math.pow(y2 - y1,  2));
+				Math.pow(y2 - y1,  2) + Math.pow(y2 - y1,  2)); // JA: z2 - z1
 	}
 	}
 

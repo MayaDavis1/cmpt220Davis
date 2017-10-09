@@ -49,7 +49,7 @@ public class AddMatrices {
 			System.out.print((i == 1 ? " + " : "   "));
 			print(m2, i);
 			System.out.print((i == 1 ? " = " : "   "));
-			print(m2, i);
+			print(m2, i); // JA: m3
 			System.out.println();
 		}
 	}
