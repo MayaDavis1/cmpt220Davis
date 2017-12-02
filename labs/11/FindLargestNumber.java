@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class FindLargestNumber {
 
 	public static void main(String[] args) {
-		int n = 8;
+		int n = 8; // Array Size
 		int max;
 		int arr[] = new int[n];
 		
@@ -19,13 +19,16 @@ public class FindLargestNumber {
 
 	}
 
+	// Method to find the largest number
 	private static int MaxNumber(int[] arr, int length) {
 		if (length == 1)
 			return arr[0];
 		else
+		// Recursively find largest number
 			return max(MaxNumber(arr, length - 1), arr[length - 1]);
 	}
 
+	// Method to find the larger number
 	private static int max(int n1, int n2) {
 		if (n1 > n2)
 			return n1;
